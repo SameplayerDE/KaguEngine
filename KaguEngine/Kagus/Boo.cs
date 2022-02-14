@@ -7,6 +7,13 @@ namespace KaguEngine.Kagus
     public class Boo
     {
         public List<Boo> Kagus = new List<Boo>();
+        public Boo Parent = null;
+        
+        public void Add(Boo kagu)
+        {
+            kagu.Parent = this;
+            Kagus.Add(kagu);
+        }
 
         protected void UpdateKagus(GameTime gameTime)
         {

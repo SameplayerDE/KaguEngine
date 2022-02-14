@@ -6,7 +6,7 @@ namespace Test.Entity
     {
         public Player()
         {
-            Kagus.Add(new SpriteBoo2D());
+            Add(new SpriteBoo2D());
         }
     }
 }
