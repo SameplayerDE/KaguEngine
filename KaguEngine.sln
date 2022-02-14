@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaguEngine", "KaguEngine\KaguEngine.csproj", "{70E11699-5718-4E3A-9908-0010F18C6331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D2AADB9F-6572-4C24-AFA7-778D0A0E1CCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E11699-5718-4E3A-9908-0010F18C6331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E11699-5718-4E3A-9908-0010F18C6331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E11699-5718-4E3A-9908-0010F18C6331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E11699-5718-4E3A-9908-0010F18C6331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2AADB9F-6572-4C24-AFA7-778D0A0E1CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2AADB9F-6572-4C24-AFA7-778D0A0E1CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2AADB9F-6572-4C24-AFA7-778D0A0E1CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2AADB9F-6572-4C24-AFA7-778D0A0E1CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
