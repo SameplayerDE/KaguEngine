@@ -31,11 +31,7 @@ namespace Test
             PrimitiveRenderer.Initialise(GraphicsDevice);
             Kagu.Init();
 
-            _moon = new Moon();
             
-            _player = new Player();
-            
-            _moon.Kagus.Add(_player);
 
             base.Initialize();
         }
@@ -43,6 +39,11 @@ namespace Test
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            
+            Kagu.Texture2DManager.Add("player", Content.Load<Texture2D>("missing"));
+            
+            _moon = new Moon0();
+            
             base.LoadContent();
         }
 
@@ -65,14 +66,7 @@ namespace Test
             _spriteBatch.Begin();
             _moon.Draw(_spriteBatch, gameTime);
             _spriteBatch.End();
-
-            PrimitiveRenderer.DrawCircleF(
-                null,
-                Color.White,
-                _player.Position,
-                1f
-            );
-
+            
             base.Draw(gameTime);
         }
     }

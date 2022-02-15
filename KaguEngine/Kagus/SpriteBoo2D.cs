@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using PrimitiveExpander;
 
 namespace KaguEngine.Kagus
 {
@@ -11,6 +12,14 @@ namespace KaguEngine.Kagus
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
+            
+            PrimitiveRenderer.DrawCircleF(
+                null,
+                Tint * Alpha,
+                Position,
+                25f
+            );
+            
             if (Texture2D == null) return;
             spriteBatch.Draw(
                 Texture2D,
